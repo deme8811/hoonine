@@ -11,4 +11,6 @@ public class GoodsController {
 	@Autowired
 	private GoodsService svc;
 	
+	//=========================================GoodsList
+	
 }
