@@ -22,6 +22,8 @@ public class GoodsDAOImpl implements GoodsDAO {
 		session.close();
 	}
 
+	//============================================  goodsList
+	
 	@Override
 	public ArrayList<Goods> goodsList() {
 		
@@ -31,6 +33,17 @@ public class GoodsDAOImpl implements GoodsDAO {
 		close(session);
 		
 		return (ArrayList<Goods>) list;
+	}
+
+	//============================================ goodsInsert
+	
+	@Override
+	public int goodsInsert(Goods goods) {
+		
+		SqlSession session = getSession();
+		int msg = session.insert("goods.goodsInsert", goods);
+		
+		return msg;
 	}
 	
 	

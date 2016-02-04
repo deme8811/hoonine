@@ -6,4 +6,6 @@ public interface GoodsDAO {
 
 	ArrayList<Goods> goodsList();
 
+	int goodsInsert(Goods goods);
+
 }
