@@ -14,7 +14,7 @@ public class UserDAOImpl implements UserDAO {
 		return factory.openSession();
 	}
 
-	private void close(SqlSession session) {
+	public void close(SqlSession session) {
 		session.close();
 	}
 }

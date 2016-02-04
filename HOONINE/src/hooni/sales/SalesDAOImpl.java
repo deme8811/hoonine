@@ -14,7 +14,7 @@ public class SalesDAOImpl implements SalesDAO {
 		return factory.openSession();
 	}
 
-	private void close(SqlSession session) {
+	public void close(SqlSession session) {
 		session.close();
 	}
 }

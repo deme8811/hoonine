@@ -14,7 +14,7 @@ public class CartDAOImpl implements CartDAO {
 		return factory.openSession();
 	}
 
-	private void close(SqlSession session) {
+	public void close(SqlSession session) {
 		session.close();
 	}
 }
