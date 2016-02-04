@@ -9,16 +9,35 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%
+		User user = (User) session.getAttribute("user");
+	%>
 	<center>
 		<table border="0" cellpadding="0" cellspacing="0" width="1197px"
 			align="center">
 			<tr>
 				<td colspan="3" height="20px"></td>
 			</tr>
+			<tr>
+				<td colspan="3" height="20px" align="right">					
+
+<%					if (user == null) {										 							%> 				
+ 					<a href="userJoin.do"><font color="#565656" size="1">회원가입</font></a>&nbsp;&nbsp; 
+					<a href="userLogin.do"><font color="#565656" size="1">로그인</font></a>&nbsp;&nbsp;					 																								
+<%					} else {																					%>						 
+ 
+ 					<a href="userDetail.do"><font color="#565656" size="1">회원정보</font></a>&nbsp;&nbsp;
+  					<a href="cartList.do?userId=${user.userId }"><font color="#565656" size="1">장바구니</font></a>&nbsp;&nbsp;
+ 					<a href="userLogout.do"><font color="#565656" size="1">로그아웃</font></a>&nbsp;&nbsp;						
+<%					}																							%>
+ 					
+</td>
+			</tr>
 			<tr height="100px">
-				<td width="25%"  align="center"><a href="main.do"><img src="img/logo.png"
-						width="180px" height="100px"></a></td>
-				<td width="50%" align="center"><input type = "text" name = "search" size="50"></td>
+				<td width="25%" align="center"><a href="main.do"><img
+						src="img/logo.png" width="180px" height="100px"></a></td>
+				<td width="50%" align="center"><input type="text" name="search"
+					size="50"></td>
 				<td width="25%" align="center">이벤트가 들어갈 자리입니다.</td>
 			</tr>
 			<tr>
@@ -31,8 +50,9 @@
 				<td colspan="3" align="center"><jsp:include page="${pageName }" /></td>
 			</tr>
 
+
+
 			<%
-				User user = (User) session.getAttribute("user");
 				if (user != null) {
 					if (user.getUserId().equals("ADMIN")) {
 			%>
