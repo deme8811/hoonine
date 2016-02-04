@@ -7,19 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<table width = "100%" bgcolor="#ffbbc6" height="30px">
+<center>
+	<table width="100%" align="center" bgcolor="#ffb6c1" height="30px" border="0" cellpadding="0" cellspacing="0">
 		<tr align="center">
-			<td width="133px"><a><img src = "img/topMenu_inner.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_tee.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_blouse.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_shirt.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_vest.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_knit.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_cardigan.png" width="133px"></a></td>
-			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
-			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
+			<td><a><img src = "img/topMenu_inner.png" ></a></td>
+			<td><a><img src = "img/topMenu_tee.png" ></a></td>
+			<td><a><img src = "img/topMenu_blouse.png" ></a></td>
+			<td><a><img src = "img/topMenu_shirt.png" ></a></td>
+			<td><a><img src = "img/topMenu_vest.png" ></a></td>
+			<td><a><img src = "img/topMenu_knit.png" ></a></td>
+			<td><a><img src = "img/topMenu_cardigan.png" ></a></td>
+			<td><img src = "img/emptyMenu.png" ></td>
+			<td><img src = "img/emptyMenu.png" ></td>
 		</tr>
 	</table>
-
+</center>
 </body>
 </html>

@@ -9,23 +9,26 @@
 <body>
 
 	<center>
-		<table border="0" cellpadding="0" cellspacing="0" width="100%"
-			align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
 			<tr align="center" height="30px">
-				<td bgcolor="#ffbbc6" width="133px"><a href="topMenu.do"><img
-						src="img/topMenu.png"></a></td>
-				<td bgcolor="#ffc0cb" width="133px"><a href="pantsMenu.do"><img
-						src="img/pantsMenu.png"></a></td>
-				<td bgcolor="#ffc5d0" width="133px"><a href="skirtMenu.do"><img src="img/skirtMenu.png"></td>
-				<td bgcolor="#ffcad5" width="133px"><img src="img/onepieceMenu.png"></td>
+				<td bgcolor="#ffbbc6" width="133px"><a href="topMenu.do"><img src="img/emptyMenu.png" width="36.5"><img
+						src="img/topMenu.png"><img src="img/emptyMenu.png" width="36.5"></a></td>
+				<td bgcolor="#ffc0cb" width="133px"><a href="pantsMenu.do"><img src="img/emptyMenu.png" width="36.5"><img
+						src="img/pantsMenu.png"><img src="img/emptyMenu.png" width="36.5"></a></td>
+				<td bgcolor="#ffc5d0" width="133px"><a href="skirtMenu.do"><img src="img/emptyMenu.png" width="36.5"><img
+						src="img/skirtMenu.png"><img src="img/emptyMenu.png" width="36.5"></a></td>
+				<td bgcolor="#ffcad5" width="133px"><img src="img/emptyMenu.png" width="26.5"><img
+					src="img/onepieceMenu.png"><img src="img/emptyMenu.png" width="26.5"></td>
 
 
-				<td bgcolor="#ffcfda" width="133px"><img src="img/outerMenu.png"></td>
+				<td bgcolor="#ffcfda" width="133px"><img src="img/emptyMenu.png" width="36.5"><img
+					src="img/outerMenu.png"><img src="img/emptyMenu.png" width="36.5"></td>
 
-				<td bgcolor="#ffd4df" width="133px"><img src="img/shoesMenu.png"></td>
-				<td bgcolor="#ffd9e4" width="133px"><img src="img/bagMenu.png"></td>
-				<td bgcolor="#ffdee9" width="133px"><img src="img/accMenu.png"></td>
-				<td bgcolor="#ffe3ee" width="133px"><img src="img/saleMenu.png"></td>
+				<td bgcolor="#ffd4df" width="133px"><img src="img/emptyMenu.png" width="36.5"><img
+					src="img/shoesMenu.png"><img src="img/emptyMenu.png" width="36.5"></td>
+				<td bgcolor="#ffd9e4" width="133px"><img src="img/emptyMenu.png" width="36.5"><img src="img/bagMenu.png"><img src="img/emptyMenu.png" width="36.5"></td>
+				<td bgcolor="#ffdee9" width="133px"><img src="img/emptyMenu.png" width="36.5"><img src="img/accMenu.png"><img src="img/emptyMenu.png" width="36.5"></td>
+				<td bgcolor="#ffe3ee" width="133px"><img src="img/emptyMenu.png" width="36.5"><img src="img/saleMenu.png"><img src="img/emptyMenu.png" width="36.5"></td>
 			</tr>
 		</table>
 	</center>
