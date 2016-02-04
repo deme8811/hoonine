@@ -22,12 +22,23 @@
 				<td colspan="3" height="20px" align="right">					
 
 <%					if (user == null) {										 							%> 				
+
+					<!-- 회원가입 -->
  					<a href="userJoin.do"><font color="#565656" size="1">회원가입</font></a>&nbsp;&nbsp; 
+
+					<!-- 로그인 -->
 					<a href="userLogin.do"><font color="#565656" size="1">로그인</font></a>&nbsp;&nbsp;					 																								
+
 <%					} else {																					%>						 
  
+ 					<!-- 회원정보 : 회원정보 수정이 가능해야함 -->
  					<a href="userDetail.do"><font color="#565656" size="1">회원정보</font></a>&nbsp;&nbsp;
+  					
+  					<!-- 장바구니 : 장바구니에 현재 담겨있는 물품목록을 DB에서 받아옴 -->
+  					<!-- 장바구니 : 장바구니에 현재 담겨있는 목록의 수정, 삭제, 결제 -->
   					<a href="cartList.do?userId=${user.userId }"><font color="#565656" size="1">장바구니</font></a>&nbsp;&nbsp;
+ 					
+ 					<!-- session invalidate -->
  					<a href="userLogout.do"><font color="#565656" size="1">로그아웃</font></a>&nbsp;&nbsp;						
 <%					}																							%>
  					
@@ -46,8 +57,10 @@
 			<tr>
 				<td colspan="3" align="center"><jsp:include page="category.jsp" /></td>
 			</tr>
+			
+			<!-- session에 바인딩 되어있는 secondMenuName을 받아옴. secondMenu를 결정함 -->
 			<tr>
-				<td colspan="3" align="center"><jsp:include page="${pageName }" /></td>
+				<td colspan="3" align="center"><jsp:include page="${secondMenuName}" /></td>
 			</tr>
 
 

@@ -14,6 +14,7 @@ public class Goods implements Serializable {
 	private int gCount;
 	private String gsUrl;
 	private String gCategory;
+	private String gCategory2;
 	private MultipartFile imgFile;
 
 	public Goods() {
@@ -21,7 +22,7 @@ public class Goods implements Serializable {
 	}
 
 	public Goods(int gId, String gName, int gPrice, String gcUrl, String gContent, int gCount, String gsUrl,
-			String gCategory, MultipartFile imgFile) {
+			String gCategory, String gCategory2, MultipartFile imgFile) {
 		super();
 		this.gId = gId;
 		this.gName = gName;
@@ -31,7 +32,17 @@ public class Goods implements Serializable {
 		this.gCount = gCount;
 		this.gsUrl = gsUrl;
 		this.gCategory = gCategory;
+		this.gCategory2 = gCategory2;
 		this.imgFile = imgFile;
+	}
+	
+
+	public String getgCategory2() {
+		return gCategory2;
+	}
+
+	public void setgCategory2(String gCategory2) {
+		this.gCategory2 = gCategory2;
 	}
 
 	public int getgId() {

@@ -12,25 +12,25 @@ public class HooniController {
 
 	@RequestMapping("/main.do")
 	public String main(HttpSession session) {
-		session.setAttribute("pageName", "favor.jsp");
+		session.setAttribute("secondMenuName", "favor.jsp");
 		return "main";
 	}
 
 	@RequestMapping("/topMenu.do")
 	public String topMenu(HttpSession session) {
-		session.setAttribute("pageName", "topMenu.jsp");
+		session.setAttribute("secondMenuName", "topMenu.jsp");
 		return "main";
 	}
 
 	@RequestMapping("/pantsMenu.do")
 	public String pantsMenu(HttpSession session) {
-		session.setAttribute("pageName", "pantsMenu.jsp");
+		session.setAttribute("secondMenuName", "pantsMenu.jsp");
 		return "main";
 	}
 	
 	@RequestMapping("/skirtMenu.do")
 	public String skirtMenu(HttpSession session) {
-		session.setAttribute("pageName", "skirtMenu.jsp");
+		session.setAttribute("secondMenuName", "skirtMenu.jsp");
 		return "main";
 	}
 }
