@@ -5,4 +5,11 @@
 
 <mapper namespace="hooni">
 
+	<select id = "goodsList" resultType="Goods">
+		select * from hoonigoods order by gId desc
+	</select>
+	
+	
+	
+
 </mapper>
