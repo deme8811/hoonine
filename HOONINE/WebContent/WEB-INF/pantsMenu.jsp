@@ -10,13 +10,13 @@
 	<table width="100%" bgcolor="#ffc0cb" height="30px" border="0" cellpadding="0" cellspacing="0">
 	<tr align="center">
 			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
-			<td width="133px"><a><img src = "img/pantsMenu_inner.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/pantsMenu_skinny.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/pantsMenu_baggy.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/pantsMenu_cargo.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/pantsMenu_short.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/pantsMenu_slacks.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/pantsMenu_leggings.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu/pantsMenu_inner.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu/pantsMenu_skinny.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu/pantsMenu_baggy.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu/pantsMenu_cargo.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu/pantsMenu_short.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu/pantsMenu_slacks.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu/pantsMenu_leggings.png" width="133px"></a></td>
 			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
 		</tr>
 	</table>
