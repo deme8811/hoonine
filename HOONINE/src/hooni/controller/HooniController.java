@@ -33,4 +33,40 @@ public class HooniController {
 		session.setAttribute("secondMenuName", "skirtMenu.jsp");
 		return "main";
 	}
+	
+	@RequestMapping("/onepieceMenu.do")
+	public String onepieceMenu(HttpSession session){
+		session.setAttribute("secondMenuName", "onpieceMenu.jsp");
+		return "main";
+	}
+	
+	@RequestMapping("/outMenu.do")
+	public String outerMenu(HttpSession session){
+		session.setAttribute("secondMenuName", "outerMenu.jsp");
+		return "main";
+	}
+	
+	@RequestMapping("/shoesMenu.do")
+	public String shoesMenu(HttpSession session){
+		session.setAttribute("secondMenuName", "shoesMenu.jsp");
+		return "main";
+	}
+	
+	@RequestMapping("/bagMenu.do")
+	public String bagMenu(HttpSession session){
+		session.setAttribute("secondMenuName", "bagMenu.jsp");
+		return "main";
+	}
+	
+	@RequestMapping("/accMenu.do")
+	public String accMenu(HttpSession session){
+		session.setAttribute("secondMenuName", "accMenu.jsp");
+		return "main";
+	}
+	
+	@RequestMapping("/saleMenu.do")
+	public String saleMenu(HttpSession session){
+		session.setAttribute("secondMenuName", "saleMenu.jsp");
+		return "main";
+	}
 }
