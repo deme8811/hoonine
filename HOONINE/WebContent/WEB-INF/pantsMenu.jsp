@@ -8,12 +8,16 @@
 </head>
 <body>
 	<table width="100%" bgcolor="#ffc0cb" height="30px">
-		<tr align="center">
-			<td><a><img src="topMenu_shirts.jpg"></a></td>
-			<td><a><img src="topMenu_knit.jpg"></a></td>
-			<td><a><img src="topMenu_blouse.jpg"></a></td>
-			<td><a><img src="topMenu_cardigan.jpg"></a></td>
-			<td><a><img src="topMenu_inner.jpg"></a></td>
+	<tr align="center">
+			<td width="133px"><a><img src = "img/pantsMenu_inner.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu_skinny.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu_baggy.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu_cargo.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu_short.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu_slacks.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/pantsMenu_leggings.png" width="133px"></a></td>
+			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
+			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
 		</tr>
 	</table>
 </body>
