@@ -11,11 +11,11 @@
 	<tr align="center">
 			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
 			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
-			<td width="133px"><a><img src = "img/pantsMenu_inner.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/pantsMenu_skinny.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/pantsMenu_baggy.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/pantsMenu_cargo.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/pantsMenu_short.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/skirtMenu/skirtMenu_h-formal.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/skirtMenu/skirtMenu_a-flare.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/skirtMenu/skirtMenu_mini.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/skirtMenu/skirtMenu_long.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/skirtMenu/skirtMenu_overall.png" width="133px"></a></td>
 			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
 			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
 			

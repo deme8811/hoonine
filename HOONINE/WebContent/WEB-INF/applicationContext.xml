@@ -23,10 +23,11 @@
 	</context:component-scan>
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
-		p:driverClassName="oracle.jdbc.driver.OracleDriver" p:url="jdbc:oracle:thin:@211.183.8.69:1521:orcl"
+		p:driverClassName="oracle.jdbc.driver.OracleDriver" p:url="jdbc:oracle:thin:@211.183.8.9:1521:orcl"
 		p:username="ca2" p:password="ca2" />
 
 	<tx:annotation-driven />
+	
 
 
 
