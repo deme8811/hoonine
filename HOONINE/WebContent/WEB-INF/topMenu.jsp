@@ -9,15 +9,15 @@
 <body>
 	<table width = "100%" bgcolor="#ffbbc6" height="30px">
 		<tr align="center">
+			<td width="133px"><a><img src = "img/topMenu_inner.png" width="133px"></a></td>
 			<td width="133px"><a><img src = "img/topMenu_tee.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_tee.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_tee.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_tee.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_tee.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_tee.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_tee.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_tee.png" width="133px"></a></td>
-			<td width="133px"><a><img src = "img/topMenu_tee.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/topMenu_blouse.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/topMenu_shirt.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/topMenu_vest.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/topMenu_knit.png" width="133px"></a></td>
+			<td width="133px"><a><img src = "img/topMenu_cardigan.png" width="133px"></a></td>
+			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
+			<td width="133px"><img src = "img/emptyMenu.png" width="133px"></td>
 		</tr>
 	</table>
 
