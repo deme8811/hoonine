@@ -27,4 +27,10 @@ public class HooniController {
 		session.setAttribute("pageName", "pantsMenu.jsp");
 		return "main";
 	}
+	
+	@RequestMapping("/skirtMenu.do")
+	public String skirtMenu(HttpSession session) {
+		session.setAttribute("pageName", "skirtMenu.jsp");
+		return "main";
+	}
 }

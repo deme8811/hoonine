@@ -16,7 +16,7 @@
 						src="img/topMenu.png"></a></td>
 				<td bgcolor="#ffc0cb" width="133px"><a href="pantsMenu.do"><img
 						src="img/pantsMenu.png"></a></td>
-				<td bgcolor="#ffc5d0" width="133px"><img src="img/skirtMenu.png"></td>
+				<td bgcolor="#ffc5d0" width="133px"><a href="skirtMenu.do"><img src="img/skirtMenu.png"></td>
 				<td bgcolor="#ffcad5" width="133px"><img src="img/onepieceMenu.png"></td>
 
 
