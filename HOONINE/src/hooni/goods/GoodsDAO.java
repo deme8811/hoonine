@@ -8,4 +8,10 @@ public interface GoodsDAO {
 
 	int goodsInsert(Goods goods);
 
+	Goods goodsDetail(String gId);
+
+	void goodsUpdate(Goods goods);
+
+	void goodsDelete(String gId);
+
 }

@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 @Controller
@@ -97,25 +98,55 @@ public class GoodsController {
 	}
 	
 	
-	//============================================ 
+	//============================================ goodsDetail
 	
-	
-	
-	
-	//============================================ 
-	
-	
-	
-	
-	//============================================ 
-	
-	
-	
+	@RequestMapping("/goodsDetail.do")
+	public String goodsDetail(@RequestParam String gId, Model model) {
+		
+		Goods goods = svc.goodsDetail(gId);
+		model.addAttribute("goods", goods);
+		
+		return "goodsDetail";
+		
+	}
 	
 	//============================================ 
 	
+	@RequestMapping("/goodsUpdateForm.do")
+	public String updateForm(@RequestParam String gId, Model model) {
+		
+		Goods goods = svc.goodsDetail(gId);
+		
+		model.addAttribute("goods", goods);
+		
+		return "goodsUpdateForm";
+		
+	}
 	
 	
+	//============================================ 
+	
+	@RequestMapping("/goodsUpdate.do")
+	public String goodsUpdate(Goods goods, HttpSession session) {
+		
+		preimg(goods, session);
+		
+		svc.goodsUpdate(goods);
+		
+		return "redirect:/goodsDetail.do?gId=" + goods.getgId();
+		
+	}
+	
+	//============================================ 
+	
+	@RequestMapping("/goodsDelete.do")
+	public String goodsDelete(@RequestParam String gId) {
+		
+		svc.goodsDelete(gId);
+		
+		return "redirect:/goodsList.do";
+		
+	}
 	
 	//============================================ 
 	

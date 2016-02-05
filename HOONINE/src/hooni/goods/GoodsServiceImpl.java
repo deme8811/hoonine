@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+
 @Service
 @Transactional
 public class GoodsServiceImpl implements GoodsService {
@@ -39,7 +40,36 @@ public class GoodsServiceImpl implements GoodsService {
 		
 		return dao.goodsInsert(goods);
 	}
+	
+	
+	//============================================ goodsDetail
 
+
+	@Override
+	public Goods goodsDetail(String gId) {
+		
+		return dao.goodsDetail(gId);
+	}
+
+	//============================================ goodsUpdate
+
+	@Override
+	public void goodsUpdate(Goods goods) {
+		
+		dao.goodsUpdate(goods);
+	}
+
+	//============================================ goodsDelete
+	
+	@Override
+	public void goodsDelete(String gId) {
+		
+		dao.goodsDelete(gId);
+		
+	}
+
+	
+	
 	
 	
 	
