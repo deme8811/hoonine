@@ -8,12 +8,5 @@
 </head>
 <body>
 
-<table width="100%" bgcolor="#ffe3ee" height="30px" border="0" cellpadding="0" cellspacing="0">
-	<tr align="center">
-		<td width="133px"><img src = "img/saleMenu/saleMenu_final.png" width="133px"></td>
-		<td width="133px"><img src = "img/saleMenu/saleMenu_new.png" width="133px"></td>
-	</tr>
-</table>
-
 </body>
 </html>
