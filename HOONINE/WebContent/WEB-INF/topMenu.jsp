@@ -10,13 +10,13 @@
 <center>
 	<table width="100%" align="center" bgcolor="#ffb6c1" height="30px" border="0" cellpadding="0" cellspacing="0">
 		<tr align="center">
-			<td><a><img src = "img/topMenu_inner.png" ></a></td>
-			<td><a><img src = "img/topMenu_tee.png" ></a></td>
-			<td><a><img src = "img/topMenu_blouse.png" ></a></td>
-			<td><a><img src = "img/topMenu_shirt.png" ></a></td>
-			<td><a><img src = "img/topMenu_vest.png" ></a></td>
-			<td><a><img src = "img/topMenu_knit.png" ></a></td>
-			<td><a><img src = "img/topMenu_cardigan.png" ></a></td>
+			<td><a><img src = "img/topMenu/topMenu_inner.png" ></a></td>
+			<td><a><img src = "img/topMenu/topMenu_tee.png" ></a></td>
+			<td><a><img src = "img/topMenu/topMenu_blouse.png" ></a></td>
+			<td><a><img src = "img/topMenu/topMenu_shirt.png" ></a></td>
+			<td><a><img src = "img/topMenu/topMenu_vest.png" ></a></td>
+			<td><a><img src = "img/topMenu/topMenu_kint.png" ></a></td>
+			<td><a><img src = "img/topMenu/topMenu_cardigan.png" ></a></td>
 			<td><img src = "img/emptyMenu.png" ></td>
 			<td><img src = "img/emptyMenu.png" ></td>
 		</tr>

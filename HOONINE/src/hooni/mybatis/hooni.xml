@@ -8,8 +8,17 @@
 	<select id = "goodsList" resultType="Goods">
 		select * from hoonigoods order by gId desc
 	</select>
+
+	<select id = "userList" resultType="User">
+		select * from hooniuser
+	</select>
 	
+	<insert id="userJoin" parameterType="User">
+		insert into hooniuser (userId, userPass, userName, userAdd, userPhone) values (#{userId}, #{userPass}, #{userName}, #{userAdd}, #{userPhone})
+	</insert>
 	
-	
+	<select id="userDetail" resultType="User">
+		select * from hooniuser where userId = #{userId}
+	</select>
 
 </mapper>
