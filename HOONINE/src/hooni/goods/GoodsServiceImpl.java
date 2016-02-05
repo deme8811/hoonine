@@ -13,21 +13,35 @@ public class GoodsServiceImpl implements GoodsService {
 	@Autowired
 	private GoodsDAO dao;
 	
+	
 	//============================================ goodsList
-
+	
+	
 	@Override
-	public ArrayList<Goods> goodsList() {
-		
-		return dao.goodsList();
+	public ArrayList<Goods> goodsList(String category) {
+		// TODO Auto-generated method stub
+		return null;
 	}
-
+	
+	
+	@Override
+	public ArrayList<Goods> c2GoodsList(String category2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
 	//============================================ goodsInsert
 
+	
 	@Override
 	public int goodsInsert(Goods goods) {
 		
 		return dao.goodsInsert(goods);
 	}
+
+	
+	
 	
 	//============================================
 	

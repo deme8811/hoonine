@@ -4,7 +4,6 @@ package hooni.goods;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpSession;
@@ -24,11 +23,18 @@ public class GoodsController {
 	//============================================ GoodsList
 	
 	@RequestMapping("/goodsList.do")
-	public String goodsList(Model model) {
+	public String goodsList(String category) {
 		
-		ArrayList<Goods> goodsList = svc.goodsList();
+
 		
-		model.addAttribute("goodsList", goodsList);
+		return "goodsList";
+		
+	}
+	
+	@RequestMapping("/c2GoodsList.do")
+	public String c2GoodsList(String category2) {
+		
+		
 		
 		return "goodsList";
 		
@@ -62,7 +68,16 @@ public class GoodsController {
 		
 	}
 	
-	//============================================ 
+	//============================================ goodsInsertForm
+	
+	@RequestMapping("/goodsInsertForm.do")
+	public String goodsInsertForm() {
+		
+		return "goodsInsertForm";
+		
+	}
+	
+	//============================================ goodsInsert
 	
 	@RequestMapping("/goodsInsert.do")
 	public String goodsInsert(Goods goods, HttpSession session, Model model) {
