@@ -60,7 +60,11 @@
 			
 			<!-- session에 바인딩 되어있는 secondMenuName을 받아옴. secondMenu를 결정함 -->
 			<tr>
-				<td colspan="3" align="center"><jsp:include page="${secondMenuName}" /></td>
+				<td colspan="3" align="center"><jsp:include page="${gCategory2Name}" /></td>
+			</tr>
+			
+			<tr>
+				<td colspan="3" align="center"><jsp:include page = "${menuView}"></td>
 			</tr>
 
 
@@ -76,7 +80,7 @@
 			</tr>
 
 			<%
-				}
+					}
 				}
 			%>
 

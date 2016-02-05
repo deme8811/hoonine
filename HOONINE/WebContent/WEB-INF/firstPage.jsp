@@ -4,23 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>♡Hoonine♡</title>
+<title>Insert title here</title>
 </head>
-<style>
-body {
-	font-family: '맑은 고딕'
-}
-</style>
 <body>
-	<%
-		session.setAttribute("pageName", "mainMenu.jsp");
-	%>
 	<center>
-		<br>
-		<h1>
-			<font color="pink">♥</font>Welcome to Hoonine<font color="pink">♥</font>
-		</h1>
-		<a href="main.do"><img src="upload/ss.png"></a>
+		<br>FIRST PAGE
+		<br>1) index로 부터 처음으로 넘어온 경우
+		<br>2) Main으로 이동하는 이미지를 클릭한 경우
 	</center>
 </body>
 </html>
