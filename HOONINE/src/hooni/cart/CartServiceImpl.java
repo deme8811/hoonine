@@ -49,21 +49,19 @@ public class CartServiceImpl implements CartService {
 	}
 
 	@Override
-	public void addCart(HttpSession session, Cart cart) {
-		@SuppressWarnings("unchecked")
-		ArrayList<Cart> cartList = (ArrayList<Cart>) session.getAttribute("cartList");
-		if (cartList == null) {
-			cartList = new ArrayList<Cart>();
-			session.setAttribute("cartList", cartList);
-			
-		}
+	public void addCart(Cart cart, Goods goods) {
+		// TODO Auto-generated method stub
 		
-		boolean isNew = true;
-		
-		for (int i = 0; i < cartList.; i++) {
-			
-		}
-
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

@@ -54,7 +54,7 @@ public class CartCotroller {
 		Goods goods = gsvc.goodsDetail(gId);
 		Cart cart = new Cart(userId, gId, goods.getgPrice(), goods.getgName(), 0, goods.getGsUrl());
 		
-		csvc.addCart();
+		csvc.addCart(cart, goods);
 		return "";
 	}
 

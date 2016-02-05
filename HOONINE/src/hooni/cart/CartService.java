@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import javax.servlet.http.HttpSession;
 
+import hooni.goods.Goods;
+
 
 public interface CartService {
 
@@ -11,8 +13,7 @@ public interface CartService {
 
 	int cart(HttpSession session);
 
-	void addCart(HttpSession session, Cart cart);
+	void addCart(Cart cart, Goods goods);
 
-	
 
 }
