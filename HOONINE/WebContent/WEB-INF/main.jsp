@@ -24,15 +24,15 @@
 <%					if (user == null) {										 							%> 				
 
 					<!-- 회원가입 -->
- 					<a href="userJoin.do"><font color="#565656" size="1">회원가입</font></a>&nbsp;&nbsp; 
+ 					<a href="userJoinForm.do"><font color="#565656" size="1">회원가입</font></a>&nbsp;&nbsp; 
 
 					<!-- 로그인 -->
-					<a href="userLogin.do"><font color="#565656" size="1">로그인</font></a>&nbsp;&nbsp;					 																								
+					<a href="userLoginForm.do"><font color="#565656" size="1">로그인</font></a>&nbsp;&nbsp;					 																								
 
 <%					} else {																					%>						 
  
  					<!-- 회원정보 : 회원정보 수정이 가능해야함 -->
- 					<a href="userDetail.do"><font color="#565656" size="1">회원정보</font></a>&nbsp;&nbsp;
+ 					<a href="userDetail.do?userId=${user.userId }"><font color="#565656" size="1">회원정보</font></a>&nbsp;&nbsp;
   					
   					<!-- 장바구니 : 장바구니에 현재 담겨있는 물품목록을 DB에서 받아옴 -->
   					<!-- 장바구니 : 장바구니에 현재 담겨있는 목록의 수정, 삭제, 결제 -->
