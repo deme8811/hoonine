@@ -4,16 +4,18 @@ import java.util.ArrayList;
 
 import javax.servlet.http.HttpSession;
 
-import hooni.goods.Goods;
-
-
 public interface CartService {
 
-	ArrayList<Cart> cartList();
+	ArrayList<Cart> cartList(String userId);
 
 	int cart(HttpSession session);
 
-	void addCart(Cart cart, Goods goods);
+	int addCart(Cart cart);
 
+	void deleteCart(Cart cart);
+
+	void deleteCartByCheckbox(String userId, int[] gIds);
+
+	void addCartByCheckbox(String userId, int[] gIds);
 
 }

@@ -50,7 +50,7 @@ public class GoodsDAOImpl implements GoodsDAO {
 	//============================================ goodsDetail
 	
 	@Override
-	public Goods goodsDetail(String gId) {
+	public Goods goodsDetail(int gId) {
 
 		SqlSession session = getSession();
 		Goods goods = session.selectOne("user.detail", gId);

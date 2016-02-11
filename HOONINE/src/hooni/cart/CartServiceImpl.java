@@ -22,8 +22,8 @@ public class CartServiceImpl implements CartService {
 	private GoodsDAO gdao;
 
 	@Override
-	public ArrayList<Cart> cartList() {
-		ArrayList<Cart> list = cdao.cartList();
+	public ArrayList<Cart> cartList(String userId) {
+		ArrayList<Cart> list = cdao.cartList(userId);
 		return list;
 	}
 
@@ -49,19 +49,56 @@ public class CartServiceImpl implements CartService {
 	}
 
 	@Override
-	public void addCart(Cart cart, Goods goods) {
-		// TODO Auto-generated method stub
-		
+	public int addCart(Cart cart) {
+		ArrayList<Cart> cartList = cdao.cartList(cart.getUserId());
+		Goods goods = gdao.goodsDetail(cart.getgId());
+
+		if (goods.getgCount() < 1) {
+			return 0;
+		} else {
+			for (Cart dbCart : cartList) {
+				if (dbCart.getgId() == cart.getgId()) {
+					cart.setCount(dbCart.getCount() + 1);
+				} else {
+					cart.setCount(1);
+				}
+			}
+			cdao.addCart(cart);
+		}
+		return 1;
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@Override
+	public void deleteCart(Cart cart) {
+		cdao.deleteCart(cart);
+
+	}
+
+	@Override
+	public void deleteCartByCheckbox(String userId, int[] gIds) {
+
+	}
+
+	@Override
+	public void addCartByCheckbox(String userId, int[] gIds) {
+		ArrayList<Cart> cartList = new ArrayList<Cart>();
+		ArrayList<Cart> dbCartList = cdao.cartList(userId);
+
+		for (int gId : gIds) {
+			Goods goods = gdao.goodsDetail(gId);
+			if (goods.getgCount() < 1) {
+				continue;
+			} else {
+				for (Cart cart : dbCartList) {
+					if (cart.getgId() == goods.getgId()) {
+						cartList.add(new Cart(userId, gId, goods.getgPrice(), goods.getgName(), cart.getCount()+1, goods.getGsUrl()));
+					} else {
+						cartList.add(new Cart(userId, gId, goods.getgPrice(), goods.getgName(), 1, goods.getGsUrl()));
+					}
+				}
+			}
+		}
+	cdao.addCartByCheckbox(cartList);
+	}
+
 }

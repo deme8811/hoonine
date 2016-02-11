@@ -46,7 +46,7 @@ public class GoodsServiceImpl implements GoodsService {
 
 
 	@Override
-	public Goods goodsDetail(String gId) {
+	public Goods goodsDetail(int gId) {
 		
 		return dao.goodsDetail(gId);
 	}
