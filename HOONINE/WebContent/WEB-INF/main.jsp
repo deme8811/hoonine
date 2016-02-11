@@ -64,7 +64,7 @@
 			</tr>
 			
 			<tr>
-				<td colspan="3" align="center"><jsp:include page = "${menuView}"></td>
+				<td colspan="3" align="center"><jsp:include page = "${menuView}"/></td>
 			</tr>
 
 
