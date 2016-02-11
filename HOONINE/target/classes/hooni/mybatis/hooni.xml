@@ -5,20 +5,48 @@
 
 <mapper namespace="hooni">
 
-	<select id = "goodsList" resultType="Goods">
-		select * from hoonigoods order by gId desc
+	<select id="goodsList" resultType="Goods">
+		select * from hoonigoods order
+		by gId desc
 	</select>
 
-	<select id = "userList" resultType="User">
+	<select id="userList" resultType="User">
 		select * from hooniuser
 	</select>
-	
+
 	<insert id="userJoin" parameterType="User">
-		insert into hooniuser (userId, userPass, userName, userAdd, userPhone) values (#{userId}, #{userPass}, #{userName}, #{userAdd}, #{userPhone})
+		insert into hooniuser
+		(userId, userPass, userName, userAdd, userPhone) values (#{userId},
+		#{userPass}, #{userName}, #{userAdd}, #{userPhone})
 	</insert>
-	
+
 	<select id="userDetail" resultType="User">
-		select * from hooniuser where userId = #{userId}
+		select * from hooniuser where
+		userId = #{userId}
 	</select>
+
+	<select id="cartList" resultType="Cart">
+		select * from hoonicart where
+		userId = #{userId}
+	</select>
+
+	<insert id="addCart" parameterType="Cart">
+		insert into hoonicart
+		(userId, gId, gPrice, gName, count, gSurl)
+		values(#{userId}, #{gId},
+		#{gPrice}, #{gName}, #{count}, #{gsUrl})
+	</insert>
+
+	<delete id="deleteCart" parameterType="Cart">
+		delete from hoonicart
+		where userId = #{userId}, gid=#{gId}
+	</delete>
+
+	<insert id="addCartByCheckbox" parameterType="Cart">
+		insert into hoonicart (userId, gId, gPrice, gName, count, gSurl)
+		values(#{userId}, #{gId}, #{gPrice}, #{gName}, #{count}, #{gsUrl})
+	</insert>
+
+
 
 </mapper>
