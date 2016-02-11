@@ -16,7 +16,7 @@ public class Goods implements Serializable {
 	private String gCategory;
 	private String gCategory2;
 	private MultipartFile imgFile;
-
+	private MultipartFile imgFile2;
 	public Goods() {
 		// TODO Auto-generated constructor stub
 	}
